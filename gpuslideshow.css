@@ -1,0 +1,79 @@
+/**
+ * jQuery GPU Slideshow Plugin Required Stylesheet 1.0.0
+ *
+ * Copyright (c) 2012 Forrest Tanaka
+ * http://forrest-tanaka.com/
+ * https://www.facebook.com/ForrestTanakaPhotoWebMedia
+ *
+ * Licensed under Creative Commons Zero:
+ *   http://creativecommons.org/publicdomain/zero/1.0/
+ */
+
+ ._sgchild, ._schild {
+	position:          absolute;
+	display:           none;
+	top:               0;
+	left:              0;
+	-webkit-transform: translate3d(0, 0, 0);
+}
+
+._schild {
+	display: block;
+}
+
+._sgcurrent {
+	display:           block;
+	-webkit-animation: fade-in 1s 0s 1 normal ease-out;
+	-moz-animation:    fade-in 1s 0s 1 normal ease-out;
+	-o-animation:      fade-in 1s 0s 1 normal ease-out;
+	animation:         fade-in 1s 0s 1 normal ease-out;
+}
+
+._sglast {
+	display:           block;
+	-webkit-animation: fade-out 1s 0s 1 normal ease-out;
+	-moz-animation:    fade-out 1s 0s 1 normal ease-out;
+	-o-animation:      fade-out 1s 0s 1 normal ease-out;
+	animation:         fade-out 1s 0s 1 normal ease-out;
+}
+
+@-webkit-keyframes fade-in {
+	from { opacity: 0; }
+	to   { opacity: 100%; }
+}
+
+@-webkit-keyframes fade-out {
+	from { opacity: 100%; }
+	to   { opacity: 0; }
+}
+
+@-moz-keyframes fade-in {
+	from { opacity: 0; }
+	to   { opacity: 100%; }
+}
+
+@-moz-keyframes fade-out {
+	from { opacity: 100%; }
+	to   { opacity: 0; }
+}
+
+@-o-keyframes fade-in {
+	from { opacity: 0; }
+	to   { opacity: 100%; }
+}
+
+@-o-keyframes fade-out {
+	from { opacity: 100%; }
+	to   { opacity: 0; }
+}
+
+@keyframes fade-in {
+	from { opacity: 0; }
+	to   { opacity: 100%; }
+}
+
+@keyframes fade-out {
+	from { opacity: 100%; }
+	to   { opacity: 0; }
+}
+
